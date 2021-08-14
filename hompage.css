@@ -1,0 +1,99 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+nav{
+	background-color: #0082e6;
+	height: 80px ;
+	width: 100%;
+}
+
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+    padding: 0 100px;
+	font-weight: bold;    
+}
+nav ul{
+    float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover{
+	background: #1b9bff;
+	transition: .5s;
+}
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.1) , rgba(0,0,0,0.1)) , url(tg.png);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.tagline{
+	position: absolute;
+	width: 1200px;
+	margin-left:0; 
+	margin-top:0;
+	text-shadow: 0px 0px 40px;
+} 
+.tagline : after{
+	position: absolute;
+	content: attr(data-text);
+    z-index: -1;
+    filter: blur(15px);
+}
+.tagline : before{
+	content: '';
+	position: absolute;
+	background: cyan;
+    z-index: -2;
+    opacity: 0.5;
+    filter:blur(40px);
+}
+
+h1{
+	padding: 0px 2px ;
+	color: cyan;
+	font-size: 50px;
+	font-family: 'Pattaya', sans-serif;
+	text-align: center;
+	margin-top: 60px;
+	margin-left: 180px;
+
+}
+
+join{
+	margin-top: 0px;
+	margin-left: 540px;
+}
+
+bttn{
+	border: 1px solid white;
+	padding: 10px 30px;
+	text-align:center;
+	position: solid;
+	color: yellow;
+	font-family: Verdana;
+	font-size: 22px;
+}
+
+.join a:hover{
+	background-color: white;
+	
+}
